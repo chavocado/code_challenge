@@ -19,19 +19,20 @@ $('#zip').on('change', function(){
 function weather() {
     //api key
     var key = '&APPID=bafc05054926bcbddaf0ed250d7ef6d5';
+    //verify token
     console.log(zip);
     //construct our URL
     var baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip=';
     var query = zip.value + ',us';
     var request = baseURL + query + key;
     console.log(request);
-    //weather image request url to be added after success, .then
+    //TODO weather image request url to be added after success, .then
     $.ajax({
         type: "GET",
         url: encodeURI(request),
         success: function(data) {
             console.log(data);
-            //upon success calculate farenheit and append weather values to DOM goes here.
+            //TODO upon success calculate farenheit and append weather values to DOM goes here.
         }
     });
 }
@@ -45,9 +46,18 @@ function searchCallback(data) {
 
 
 
-
-//Form validation for appointment
-
+//TODO:
+//Form validation for appointment.
+//timer start to imitate loading wait time
+//trigger css change to cursor with spin ball/load timer
 //conditional statement that runs through form input values in form object
-//upon true clear form DOM and append Thank you template in it's place.
+// jquery validation should go in top after document ready
+//var firstName = $("#name").val();
+//name regex  /^[a-zA-Z]+$/;
+//var email = $("#email").val();
+//email regex /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+// var date = $("#date").val();
+// var lastName = $("#lastName").val();
+//
+//If true clear form from DOM and append Thank you template in it's place.
 //else alert user fields are required to schedule an appointment.
