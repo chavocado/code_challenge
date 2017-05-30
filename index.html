@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NRT Front End Challenge</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Montserrat" rel="stylesheet">
+    <!-- Temp holder for import -->
+    <!-- <style> @import url('https://fonts.googleapis.com/css?family=Hind+Siliguri|Montserrat'); </style> -->
+  </head>
+  <header><h2>H E A D E R</h2></header>
+
+  <main>
+    <div class="headers">
+      <h2>PROPERTY       DETAILS</h2>
+    </div>
+    <section class="property">
+      <h3>{{Price}}</h3>
+      <h4>{{Address}}</h4>
+      <div class="house">
+        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/D3f26b84bb2d45C-4826692.jpg?lcarouselcrop" alt="Image of {{address}}">
+        <div class="textblock">
+          <h5>Bedrooms</h5><p>4</p>
+          <h5>Bathrooms</h5><p>3</p>
+        </div>
+        <div class="textblock">
+          <h5>Taxes</h5><p>$17,000</p>
+          <h5>Status</h5><p>Active</p>
+          <h5>Type</h5><p>Single - Family Home</p>
+          <h5>Added</h5><p>May 8, 2017</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="property">
+      <h3>{{Price}}</h3>
+      <h4>{{Address}}</h4>
+      <div class="house">
+        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/Dd488809d60a4d9-4813192.jpg?lcarouselcrop" alt="Image of {{address}}">
+      </div>
+    </section>
+
+    <section class="property">
+      <h3>{{Price}}</h3>
+      <h4>{{Address}}</h4>
+      <div class="house">
+        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/f841597a433B479-4796453.jpg?lcarouselcrop" alt="Image of {{address}}">
+      </div>
+    </section>
+  </main>
+
+  <section class="weather">
+    <div class="headers">
+      <h2>W E A T H E R</h2>
+    </div>
+    <div class="weather-form">
+      <input type="text" name="zip" placeholder="Zip Code" value="">
+      <a href="_blank" class="button">SUBMIT</a>
+    </div>
+
+  </section>
+
+  <section class="schedule">
+    <div class="headers">
+      <h2>SCHEDULE  APPOINTMENT</h2>
+    </div>
+    <form class="schedule-form">
+      <div class="block">
+        <div class="inputA">
+          <input type="text" name="firstName" placeholder="First Name" required value="">
+          <input  type="text" name="lastName" placeholder="Last Name" value="">
+        </div>
+        <div class="inputB">
+          <input type="text" name="email" placeholder="E-mail" required value="">
+          <input type="date" name="date" placeholder="Date" required value="">
+          <a href="submit" class="button">SUBMIT</a>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <footer><h2>F O O T E R</h2></footer>
+</html>
