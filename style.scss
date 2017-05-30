@@ -51,6 +51,27 @@ footer {
   font-family: $hind-siliguri;
   font-weight: 300;
 }
+//property styles
+h3 {
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 36px;
+}
+h4 {
+  font-family: $montserrat;
+  font-weight: 300;
+  font-size: 20px;
+}
+h5{
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 20px;
+}
+p{
+  font-family: $montserrat;
+  font-weight: 300;
+  font-size: 20px;
+}
 //styling for property details
 img {
   border-radius: 15px;
@@ -63,6 +84,7 @@ img {
   display: inline;
 }
 
+//weather and contact styles
 //input field styles
 input{
   display: inline;
