@@ -3,85 +3,164 @@
   <head>
     <meta charset="utf-8">
     <title>NRT Front End Challenge</title>
+    <!-- Libraries/Framework -->
     <script type="text/javascript" src="jquery.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="angular-route.min.js"></script>
+    <!-- Controllers -->
+    <script type="text/javascript" src="clientapp.js"></script>
+    <script type="text/javascript" src="WeatherController.js"></script>
+    <script type="text/javascript" src="AppointmentController.js"></script>
+    <!-- <script type="text/javascript" src="app.js"></script> -->
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri|Montserrat" rel="stylesheet">
     <!-- Temp holder for import -->
     <!-- <style> @import url('https://fonts.googleapis.com/css?family=Hind+Siliguri|Montserrat'); </style> -->
   </head>
   <header><h2>H E A D E R</h2></header>
-
+  <body ng-app="myApp" ng-controller="AppointmentController">
   <main>
     <div class="headers">
       <h2>PROPERTY DETAILS</h2>
     </div>
-    <section class="property">
-      <h3>{{Price}}</h3>
-      <h4>{{Address}}</h4>
+    <div class="property">
       <div class="house">
-        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/D3f26b84bb2d45C-4826692.jpg?lcarouselcrop" alt="Image of {{address}}">
-        <div class="textblock">
-          <h5>Bedrooms</h5><p>4</p>
-          <h5>Bathrooms</h5><p>3</p>
+        <h3>$639,000</h3>
+        <h4>5420 Countryside Road, Edina, MN 55436</h4>
+        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/D3f26b84bb2d45C-4826692.jpg?trim" alt="Image of {{address}}">
+      </div>
+      <div class="bed-bath">
+          <div class="stat-label-container">
+              <div class="stat-label">Bedrooms :</div>
+              <div class="stat-label">Bathrooms :</div>
+          </div>
+
+          <div class="stat-property-container">
+            <div class="stat-property">4</div>
+            <div class="stat-property">3</div>
+          </div>
+
+      </div>
+      <div class="stats">
+        <div class="stat-label-container">
+            <div class="stat-label">Taxes :</div>
+            <div class="stat-label">Status :</div>
+            <div class="stat-label">Type :</div>
+            <div class="stat-label">Added :</div>
         </div>
-        <div class="textblock">
-          <h5>Taxes</h5><p>$17,000</p>
-          <h5>Status</h5><p>Active</p>
-          <h5>Type</h5><p>Single - Family Home</p>
-          <h5>Added</h5><p>May 8, 2017</p>
+        <div class="stat-property-container">
+          <div class="stat-property">$17,000</div>
+          <div class="stat-property">Active</div>
+          <div class="stat-property">Single - Family Home</div>
+          <div class="stat-property">May 8, 2017</div>
         </div>
-
       </div>
+    </div>
 
-    </section>
-
-    <section class="property">
-      <h3>{{Price}}</h3>
-      <h4>{{Address}}</h4>
+    <div class="property">
       <div class="house">
-        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/Dd488809d60a4d9-4813192.jpg?lcarouselcrop" alt="Image of {{address}}">
+        <h3>$639,000</h3>
+        <h4>5420 Countryside Road, Edina, MN 55436</h4>
+        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/Dd488809d60a4d9-4813192.jpg?trim" alt="Image of {{address}}">
       </div>
-    </section>
+      <div class="bed-bath">
+          <div class="stat-label-container">
+              <div class="stat-label">Bedrooms :</div>
+              <div class="stat-label">Bathrooms :</div>
+          </div>
 
-    <section class="property">
-      <h3>{{Price}}</h3>
-      <h4>{{Address}}</h4>
-      <div class="house">
-        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/f841597a433B479-4796453.jpg?lcarouselcrop" alt="Image of {{address}}">
+          <div class="stat-property-container">
+            <div class="stat-property">4</div>
+            <div class="stat-property">3</div>
+          </div>
+
       </div>
-    </section>
+      <div class="stats">
+        <div class="stat-label-container">
+            <div class="stat-label">Taxes :</div>
+            <div class="stat-label">Status :</div>
+            <div class="stat-label">Type :</div>
+            <div class="stat-label">Added :</div>
+        </div>
+        <div class="stat-property-container">
+          <div class="stat-property">$17,000</div>
+          <div class="stat-property">Active</div>
+          <div class="stat-property">Single - Family Home</div>
+          <div class="stat-property">May 8, 2017</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="property">
+      <div class="house">
+        <h3>$639,000</h3>
+        <h4>5420 Countryside Road, Edina, MN 55436</h4>
+        <img src="https://cdn.cbhomes.com/s3/mediasvc-prd/properties/f841597a433B479-4796453.jpg?trim" alt="Image of {{address}}">
+      </div>
+      <div class="bed-bath">
+          <div class="stat-label-container">
+              <div class="stat-label">Bedrooms :</div>
+              <div class="stat-label">Bathrooms :</div>
+          </div>
+
+          <div class="stat-property-container">
+            <div class="stat-property">4</div>
+            <div class="stat-property">3</div>
+          </div>
+
+      </div>
+      <div class="stats">
+        <div class="stat-label-container">
+            <div class="stat-label">Taxes :</div>
+            <div class="stat-label">Status :</div>
+            <div class="stat-label">Type :</div>
+            <div class="stat-label">Added :</div>
+        </div>
+        <div class="stat-property-container">
+          <div class="stat-property">$17,000</div>
+          <div class="stat-property">Active</div>
+          <div class="stat-property">Single - Family Home</div>
+          <div class="stat-property">May 8, 2017</div>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <section class="weather">
+  <section class="weather" ng-controller="WeatherController">
     <div class="headers">
       <h2>W E A T H E R</h2>
     </div>
     <div class="weather-form">
-      <input type="number" name="zip" id="zip" placeholder="Zip Code" value="">
-      <a href="#" class="button" id="submit">SUBMIT</a>
+      <input type="number" name="zip" placeholder="Zip Code" ng-model="zipCode" value="">
+      <a class="button" ng-click="submitZip()">SUBMIT</a>
+    </div>
+    <div ng-if="weatherData">
+      <h3>{{tempInFarenheit}}&#8457</h3>
+      <h3>{{description}}</h3>
+      <img class="weathericon" ng-src="{{icon}}">
     </div>
 
   </section>
-
+  <div class="loader" ng-if="loading"></div>
   <section class="schedule">
     <div class="headers">
       <h2>SCHEDULE  APPOINTMENT</h2>
     </div>
-    <form class="schedule-form">
+    <form class="schedule-form" name="schedule" ng-if="!scheduleFormSubmitted">
       <div class="block">
         <div class="inputA">
-          <input type="text" name="firstName" id="firstName" placeholder="First Name" required value="">
-          <input  type="text" name="lastName" id="lastName" placeholder="Last Name" value="">
+          <input type="text" name="firstName" ng-model="user.firstName" placeholder="First Name" required ng-pattern="/^[a-zA-Z]+$/">
+          <input  type="text" name="lastName" ng-model="user.lastName" placeholder="Last Name" value="">
         </div>
         <div class="inputB">
-          <input type="text" name="email" id="email" placeholder="E-mail" required value="">
-          <input type="date" name="date" id="date" placeholder="Date" required value="">
-          <a href="submit" class="button">SUBMIT</a>
+          <input type="text" name="email" ng-model="user.email" placeholder="E-mail" required ng-pattern="/^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/">
+          <input type="date" name="date" ng-model="user.date" ng-change="validateDate()" placeholder="Date" required>
+          <button class="button" ng-disabled="schedule.firstName.$invalid || schedule.email.$invalid || schedule.date.$invalid" ng-click="validation()">SUBMIT</button>
         </div>
       </div>
     </form>
+    <h3 ng-if="scheduleFormSubmitted">Thank you!</h3>
   </section>
-
+  </body>
   <footer><h2>F O O T E R</h2></footer>
 </html>

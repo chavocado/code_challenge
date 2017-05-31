@@ -22,6 +22,9 @@ body {
   margin: 0;
   padding: 0;
 }
+main{
+  padding: 10px 0 30px 0;
+}
 
 //light weight
 h2{
@@ -62,26 +65,51 @@ h4 {
   font-weight: 300;
   font-size: 20px;
 }
-h5{
+// h5{
+//   font-family: $montserrat;
+//   font-weight: 500;
+//   font-size: 20px;
+// }
+// p{
+//   font-family: $montserrat;
+//   font-weight: 300;
+//   font-size: 20px;
+// }
+//styling for property details
+img {
+  border-radius: 15px;
+  width: 440px;
+  background-color: #C7C7C7;
+}
+.house{
+  width: 40%;
+  display: inline-block;
+}
+.stat-label{
   font-family: $montserrat;
   font-weight: 500;
   font-size: 20px;
 }
-p{
+.stat-label-container{
+  display: inline-block;
+  width: 40%;
+}
+.stat-property{
   font-family: $montserrat;
   font-weight: 300;
   font-size: 20px;
 }
-//styling for property details
-img {
-  border-radius: 15px;
-  object-fit: fill;
-  height: 200px;
-  width: 250px;
-  background-color: #C7C7C7;
+.stat-property-container{
+  display: inline-block;
+  width: 55%;
 }
-.house{
-  display: inline;
+.bed-bath{
+  width: 29%;
+  display: inline-block;
+}
+.stats{
+  width: 29%;
+  display: inline-block;
 }
 
 //weather and contact styles
@@ -97,10 +125,7 @@ input{
   padding: 15px 30px 15px 20px;
   margin: 6px;
 }
-//attempt to line up button using div blocks
-// .inputA .inputB{
-//   display: inline;
-// }
+
 //button styles and hover/active effects nested
 .button{
   border-radius: 28px;
@@ -128,17 +153,31 @@ input{
   padding: 40px 10px 80px;
   text-align: center;
 }
-// .weather-form{
-//   text-align: center;
-// }
+
+.weather-icon{
+  width: 125px;
+}
+
 .schedule{
   background-color: #FFFFFF;
   padding: 40px 10px 80px;
   text-align: center;
 }
-// .schedule-form{
-//   text-align: center;
-// }
+
 form{
    text-align: center;
  }
+.loader {
+  border: 16px solid #F1F1F1;
+  border-top: 16px solid #5979A2;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
